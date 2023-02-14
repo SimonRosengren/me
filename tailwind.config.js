@@ -27,7 +27,10 @@ module.exports = {
             'poppins': ['Poppins', 'sans-serif']
           },
           secondary: {
-            100: '#d9d9d9'
+            100: '#F5EFDF'
+          },
+          accent: {
+            100: '#d18100'
           }
         },
       },

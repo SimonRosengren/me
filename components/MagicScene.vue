@@ -40,7 +40,7 @@ const randomVector3 = (min: number, max: number): Vector3 => {
 
 const addNewStars = (): void => {
     for (let index = 0; index < 50; index++) {
-        stars.push(new Star(randomVector3(-50, 50), new Vector3(0, 0, -9), 0.01, new Mesh(
+        stars.push(new Star(randomVector3(-80, 80), new Vector3(0, 0, -4), 0.01, new Mesh(
             new SphereGeometry(0.04, 32, 32),
             new MeshBasicMaterial({ color: '#f8fae3' })
         )))
@@ -54,7 +54,6 @@ const addNewStars = (): void => {
     stars.forEach(star => {
         scene.add(star.mesh)
     })
-    console.log(stars.length)
 }
 
 const clearOldStars = (): void => {

@@ -9,7 +9,7 @@ import { MagicScene } from '~~/.nuxt/components';
             <h2 class="transition ease-in-out text-4xl lg:text-6xl text-main-100 hover:text-secondary-100 font-bold">My name is Simon
                 and I'm a developer</h2>
         </div>
-        <div class="bg-main-100 h-screen sticky top-0 lg:flex lg:items-center">
+        <div class="bg-main-100 h-screen sticky top-0 flex items-center">
             <div class="grid grid-cols-3 lg:grid-cols-9 gap-1 lg:gap-4 p-3 grid-flow-dense lg:px-32">
                 <div class="bg-accent-red-100 text-text-yellow aspect-square p-2 text-sm lg:text-lg rounded-br-8xl rounded-tl-8xl  flex justify-center items-center">
                     I code because I love coding.
@@ -36,7 +36,7 @@ import { MagicScene } from '~~/.nuxt/components';
                     
                 </div>
                 <div class="bg-accent-red-100 text-text-yellow aspect-square p-2 text-sm lg:text-lg flex justify-center items-center rounded-tr-8xl">
-                    
+                    B3 Skilled
                 </div>
                 <div class="bg-accent-red-100 text-text-yellow aspect-square p-2 text-sm lg:text-lg flex justify-center items-center">
                     
@@ -44,7 +44,7 @@ import { MagicScene } from '~~/.nuxt/components';
                 <div class="bg-accent-red-100 text-text-yellow aspect-square p-2 text-sm lg:text-lg flex justify-center items-center">
                     Dahl
                 </div>
-                <div class="bg-accent-red-100 text-text-yellow aspect-square p-2 text-sm lg:text-lg flex justify-center items-center rounded-br-8xl">
+                <div class="bg-accent-red-100 text-text-yellow aspect-square p-2 text-sm lg:text-lg flex lg:hidden justify-center items-center rounded-br-8xl">
                     Tengai
                 </div>
                 <div class="bg-accent-red-100 text-text-yellow aspect-square p-2 text-sm lg:text-lg flex justify-center items-center rounded-full">
@@ -53,8 +53,11 @@ import { MagicScene } from '~~/.nuxt/components';
                 <div class="bg-accent-red-100 text-text-yellow aspect-square p-2 text-sm lg:text-lg flex justify-center items-center rounded-full">
                     
                 </div>
-                <div class="bg-accent-red-100 text-text-yellow aspect-square p-2 text-sm lg:text-lg flex justify-center items-center">
+                <div class="bg-accent-red-100 text-text-yellow aspect-square p-2 text-sm lg:text-lg flex justify-center items-center rounded-b-full">
                     
+                </div>
+                <div class="bg-accent-red-100 text-text-yellow aspect-square p-2 text-sm lg:text-lg hidden lg:flex justify-center items-center rounded-br-8xl">
+                    Tengai
                 </div>
                 <div class="bg-accent-red-100 text-text-yellow aspect-square p-2 text-sm lg:text-lg hidden justify-center items-center lg:flex">
                     

@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Baumans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baumans");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-    @apply bg-main-100;
+    @apply bg-neutral-300;
 }
 
 ::-webkit-scrollbar {

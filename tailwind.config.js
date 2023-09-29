@@ -15,27 +15,28 @@ module.exports = {
       lg: '1330px'
     },
     fontFamily: {
-      'baumans': ['Baumans', 'sans-serif']
+      'Baumans': ['Baumans', 'sans-serif']
     },
     extend: {
       colors: {
-        main: {
-          100: '#0f0f0f',
-          200: '#080808'
+        neutral: {
+          '000': '#ffffff',
+          100: '#ededed',
+          200: '#505050',
+          300: '#0f0f0f',
+          400: '#030202',
+          500: '#000000'
+        },
+        red: {
+          100: '#C66F66',
+          200: '#9D453C',
+          300: '#7d261e',
+          400: '#560E07',
+          500: '#320500'
         },
         fontFamily: {
-          'baumans': ['Baumans', 'sans-serif']
+          'Baumans': ['Baumans', 'sans-serif']
         },
-        secondary: {
-          100: '#F5EFDF'
-        },
-        accent: {
-          100: '#d18100'
-        },
-        'accent-red': {
-          100: '#7d261e'
-        },
-        'text-yellow': '#e6dcb8'
       },
       borderRadius: {
         '8xl': '4rem',

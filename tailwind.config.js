@@ -15,7 +15,7 @@ module.exports = {
       lg: '1330px'
     },
     fontFamily: {
-      'Baumans': ['Baumans', 'sans-serif']
+      'display': ['Arimo', 'san-serif']
     },
     extend: {
       colors: {
@@ -35,7 +35,7 @@ module.exports = {
           500: '#320500'
         },
         fontFamily: {
-          'Baumans': ['Baumans', 'sans-serif']
+          '[DM Serif Display]': ['[DM Serif Display]', 'sans-serif']
         },
       },
       borderRadius: {

@@ -5,7 +5,7 @@
             <div class="flex flex-col justify-center h-screen px-32">
                 <div class="flex flex-col gap-5 sticky top-10 ">
                     <div class="border-b border-r font-bold">
-                        <h2 class="lg:text-9xl text-7xl text-neutral-000 font-bold -mb-6">Hello</h2>
+                        <h2 class="green lg:text-9xl text-7xl text-neutral-000 font-bold -mb-6">Hello</h2>
                         <h2 class="lg:text-9xl text-7xl text-neutral-000 font-bold">I am Simon</h2>
                     </div>
                     <Button @click="navigateTo({ path: '/', hash: '#done' })">
@@ -246,7 +246,7 @@
 </template>
 
 <script lang="ts" setup>
-const openMail = () => {
-    navigateTo('mailto:simonrosengren123@gmail.com', { external: true })
-}
+const { $gsap: gsap, $Draggable: Draggablem, $ScrollTriggger: ScrollTrigger } = useNuxtApp();
+if (!process.server) gsap.to(".green", {rotation: 360, x: 100, duration: 1});
+
 </script>

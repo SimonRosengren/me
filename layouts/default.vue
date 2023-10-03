@@ -1,7 +1,7 @@
 <template>
 <div>
-    <Header />
+    <Header class="fixed top-0 bg-neutral-300/50 backdrop-blur-lg z-10" />
     <slot />
-    <div class="h-64 lg:h-96"></div>
+    <Footer class="fixed bottom-0 bg-neutral-300/50 backdrop-blur-lg z-10" />
 </div>
-</template>
+</template> 

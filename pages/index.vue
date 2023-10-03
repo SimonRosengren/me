@@ -1,244 +1,126 @@
 <template>
-    <div class="h-screen font-display bg-transparent">
+    <div class="h-screen font-display bg-transparent relative">
         <MagicScene />
         <section id="home">
-            <div class="flex flex-col justify-center h-screen px-32">
-                <div class="flex flex-col gap-5 sticky top-10 ">
-                    <div class="border-b border-r font-bold">
-                        <h2 class="lg:text-9xl text-7xl text-neutral-000 font-bold -mb-6">Hello</h2>
-                        <h2 class="lg:text-9xl text-7xl text-neutral-000 font-bold">I am Simon</h2>
+            <div class="h-screen" />
+            <div class="flex flex-col justify-center h-screen px-4 lg:px-32 fixed top-0">
+                <div class="flex flex-col gap-5">
+                    <div class="border-b lg:border-r font-bold pb-3 pr-64">
+                        <div class=" max-w-xs lg:max-w-6xl">
+                            <h2 class="lg:text-7xl lg:text-9xl leading-[.9] text-7xl text-neutral-100 font-bold">Hello.</h2>
+                            <h2 class="lg:text-7xl lg:text-9xl leading-[.9] text-7xl text-neutral-100 font-bold">I am Simon</h2>
+                        </div>
                     </div>
-                    <Button @click="navigateTo({ path: '/', hash: '#done' })">
+                    <Button @click="navigateTo({ path: '/', hash: '#did' })">
                         <template #body>Explore</template>
                     </Button>
                 </div>
 
             </div>
         </section>
-        <section id="done">
-            <div class="bg-neutral-300 h-screen sticky mt-4 flex items-center px-32">
-                <div class="w-full flex gap-14 items-center">
+        <section id="me">
+            <div class="bg-neutral-300 h-screen flex items-center lg:px-32 relative">
+                <div class="w-full flex flex-col lg:flex-row gap-14 items-center">
                     <div class="">
-                        <h2 class=" text-9xl font-bold text-neutral-100">What</h2>
-                        <h3 class=" text-9xl font-bold text-neutral-100 -mt-4">I did</h3>
+                        <h2 class=" text-7xl lg:text-9xl font-bold text-neutral-100">Who</h2>
+                        <h3 class=" text-7xl lg:text-9xl font-bold text-neutral-100 -mt-4">am I</h3>
                     </div>
-                    <div class="grid grid-cols-3 lg:grid-cols-9 gap-1 lg:gap-4 p-3 grid-flow-dense w-full">
-                        <CardClickable
-                            class=" aspect-square text-sm lg:text-lg rounded-br-8xl rounded-tl-8xl  flex justify-center items-center">
-
-                        </CardClickable>
-                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center">
-
-                        </CardClickable>
-                        <CardClickable
-                            class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-tr-8xl">
-
-                        </CardClickable>
-                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center">
-
-                        </CardClickable>
-                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center">
+                    <div class="p-4 rounded-tr-9xl border text-neutral-100 border-red-200">
+                        Mollit sit et nulla officia. Mollit consequat minim amet enim ullamco magna commodo consectetur magna laboris sit. Ea ipsum elit irure veniam ipsum cupidatat dolor qui sunt labore.
+                    </div>
+                    <!-- <div class="grid grid-cols-3 lg:grid-cols-8 gap-1 lg:gap-4 p-3 grid-flow-dense w-full">
+                        <CardClickable class=" aspect-square col-span-2 text-sm lg:text-lg rounded-br-8xl rounded-tl-8xl  flex justify-center items-center">
                             Avensia
                         </CardClickable>
-                        <CardClickable
-                            class="text-neutral-000 aspect-square p-2 text-sm lg:text-lg flex justify-center items-center">
-
-                        </CardClickable>
-                        <CardClickable
-                            class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-tl-8xl rounded-br-8xl">
+                        <CardClickable class=" aspect-square col-span-2 text-sm lg:text-lg flex justify-center items-center">
                             Bonnier
-                        </CardClickable>
-                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center">
-
-                        </CardClickable>
+                        </CardClickable>  
                         <CardClickable
-                            class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-tr-8xl">
-                            B3 Skilled
-                        </CardClickable>
-                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center">
-
-                        </CardClickable>
-                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center">
+                            class=" aspect-square col-span-2 text-sm lg:text-lg flex justify-center items-center rounded-tr-8xl">
                             Dahl
                         </CardClickable>
                         <CardClickable
-                            class=" aspect-square text-sm lg:text-lg flex lg:hidden justify-center items-center rounded-br-8xl">
+                            class=" aspect-square text-sm col-span-2 lg:text-lg flex justify-center items-center rounded-br-8xl">
                             Tengai
                         </CardClickable>
-                        <CardClickable
-                            class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-full">
-
-                        </CardClickable>
-                        <CardClickable
-                            class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-full">
-
-                        </CardClickable>
-                        <CardClickable
-                            class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-b-full">
-
-                        </CardClickable>
-                        <CardClickable
-                            class=" aspect-square text-sm lg:text-lg hidden lg:flex justify-center items-center rounded-br-8xl">
-                            Tengai
-                        </CardClickable>
-                        <CardClickable class=" aspect-square text-sm lg:text-lg hidden justify-center items-center lg:flex">
-
-                        </CardClickable>
-                        <CardClickable
-                            class="text-neutral-000 aspect-square p-2 text-sm lg:text-lg hidden justify-center items-center lg:flex">
-
-                        </CardClickable>
-                        <CardClickable class=" aspect-square text-sm lg:text-lg hidden justify-center items-center lg:flex">
-
-                        </CardClickable>
-                        <CardClickable
-                            class=" aspect-square text-sm lg:text-lg hidden justify-center items-center lg:flex rounded-tl-8xl rounded-br-8xl">
-
-                        </CardClickable>
-                        <CardClickable
-                            class=" text-neutral-000 aspect-square p-2 text-sm lg:text-lg hidden justify-center items-center lg:flex">
-
-                        </CardClickable>
-                        <CardClickable
-                            class=" aspect-square text-sm lg:text-lg hidden justify-center items-center lg:flex rounded-br-8xl">
-
-                        </CardClickable>
-                        <CardClickable class=" aspect-square text-sm lg:text-lg hidden justify-center items-center lg:flex">
-
-                        </CardClickable>
-                        <CardClickable
-                            class=" aspect-square text-sm lg:text-lg hidden justify-center items-center lg:flex rounded-full">
-
-                        </CardClickable>
-                        <CardClickable class=" aspect-square text-sm lg:text-lg hidden justify-center items-center lg:flex">
-
-                        </CardClickable>
-                        <CardClickable
-                            class=" aspect-square text-sm lg:text-lg hidden justify-center items-center lg:flex rounded-tl-8xl rounded-br-8xl">
-
-                        </CardClickable>
-                        <CardClickable class=" aspect-square text-sm lg:text-lg hidden justify-center items-center lg:flex">
-
-                        </CardClickable>
-                        <CardClickable class=" aspect-square text-sm lg:text-lg hidden justify-center items-center lg:flex">
-
-                        </CardClickable>
-                    </div>
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-br-8xl" />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-bl-8xl" />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-tr-8xl" />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-tl-8xl " />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-br-8xl" />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-br-8xl" />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-br-8xl" />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-br-8xl" />
+                    </div> -->
                 </div>
-
-
-
-
-
-
-                <!-- <div class="grid grid-cols-3 lg:grid-cols-9 gap-1 lg:gap-4 p-3 grid-flow-dense">
-                    <CardClickable
-                        class=" aspect-square text-sm lg:text-lg rounded-br-8xl rounded-tl-8xl  flex justify-center items-center">
-                        I code because I love coding.
-                    </CardClickable>
-                    <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center">
-                        I learn new things because I love learning
-                    </CardClickable>
-                    <CardClickable
-                        class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-tr-8xl">
-
-                    </CardClickable>
-                    <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center">
-
-                    </CardClickable>
-                    <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center">
-                        Avensia
-                    </CardClickable>
-                    <CardClickable
-                        class="text-neutral-000 aspect-square p-2 text-sm lg:text-lg flex justify-center items-center">
-
-                    </CardClickable>
-                    <CardClickable
-                        class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-tl-8xl rounded-br-8xl">
-                        Bonnier
-                    </CardClickable>
-                    <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center">
-
-                    </CardClickable>
-                    <CardClickable
-                        class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-tr-8xl">
-                        B3 Skilled
-                    </CardClickable>
-                    <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center">
-
-                    </CardClickable>
-                    <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center">
-                        Dahl
-                    </CardClickable>
-                    <CardClickable
-                        class=" aspect-square text-sm lg:text-lg flex lg:hidden justify-center items-center rounded-br-8xl">
-                        Tengai
-                    </CardClickable>
-                    <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-full">
-
-                    </CardClickable>
-                    <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-full">
-
-                    </CardClickable>
-                    <CardClickable
-                        class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-b-full">
-
-                    </CardClickable>
-                    <CardClickable
-                        class=" aspect-square text-sm lg:text-lg hidden lg:flex justify-center items-center rounded-br-8xl">
-                        Tengai
-                    </CardClickable>
-                    <CardClickable class=" aspect-square text-sm lg:text-lg hidden justify-center items-center lg:flex">
-
-                    </CardClickable>
-                    <CardClickable
-                        class="text-neutral-000 aspect-square p-2 text-sm lg:text-lg hidden justify-center items-center lg:flex">
-
-                    </CardClickable>
-                    <CardClickable class=" aspect-square text-sm lg:text-lg hidden justify-center items-center lg:flex">
-
-                    </CardClickable>
-                    <CardClickable
-                        class=" aspect-square text-sm lg:text-lg hidden justify-center items-center lg:flex rounded-tl-8xl rounded-br-8xl">
-
-                    </CardClickable>
-                    <CardClickable
-                        class=" text-neutral-000 aspect-square p-2 text-sm lg:text-lg hidden justify-center items-center lg:flex">
-
-                    </CardClickable>
-                    <CardClickable
-                        class=" aspect-square text-sm lg:text-lg hidden justify-center items-center lg:flex rounded-br-8xl">
-
-                    </CardClickable>
-                    <CardClickable class=" aspect-square text-sm lg:text-lg hidden justify-center items-center lg:flex">
-
-                    </CardClickable>
-                    <CardClickable
-                        class=" aspect-square text-sm lg:text-lg hidden justify-center items-center lg:flex rounded-full">
-
-                    </CardClickable>
-                    <CardClickable class=" aspect-square text-sm lg:text-lg hidden justify-center items-center lg:flex">
-
-                    </CardClickable>
-                    <CardClickable
-                        class=" aspect-square text-sm lg:text-lg hidden justify-center items-center lg:flex rounded-tl-8xl rounded-br-8xl">
-
-                    </CardClickable>
-                    <CardClickable class=" aspect-square text-sm lg:text-lg hidden justify-center items-center lg:flex">
-
-                    </CardClickable>
-                    <CardClickable class=" aspect-square text-sm lg:text-lg hidden justify-center items-center lg:flex">
-
-                    </CardClickable>
-                    <div class="col-span-full py-16 flex justify-end">
-                        <div class="text-neutral-000 text-lg lg:text-2xl border-b hover:bg-neutral-000 hover:bg-opacity-5 cursor-pointer border-neutral-000 p-4"
-                            @click="openMail">
-                            Contact me
-                        </div>
+            </div>
+        </section>
+        <section id="did">
+            <div class="bg-neutral-300 h-screen flex items-center lg:px-32 relative">
+                <div class="w-full flex flex-col lg:flex-row gap-14 items-center">
+                    <div class="">
+                        <h2 class=" text-7xl lg:text-9xl font-bold text-neutral-100">What</h2>
+                        <h3 class=" text-7xl lg:text-9xl font-bold text-neutral-100 -mt-4">I did</h3>
                     </div>
-                </div> -->
-                <!-- <div class="lg:w-1/3">I build things because I love building things. I learn new things because I love learning new things. Curiosity is my super power</div>
-            <div class="border border-neutral-000 rounded-full p-4 text-center text-xl lg:text-2xl max-w-[300px] mt-24 cursor-pointer transition-colors hover:bg-neutral-000 hover:bg-opacity-10" @click="openMail">Contact me -></div> -->
+                    <!-- <div class="grid grid-cols-3 lg:grid-cols-8 gap-1 lg:gap-4 p-3 grid-flow-dense w-full">
+                        <CardClickable class=" aspect-square col-span-2 text-sm lg:text-lg rounded-br-8xl rounded-tl-8xl  flex justify-center items-center">
+                            Avensia
+                        </CardClickable>
+                        <CardClickable class=" aspect-square col-span-2 text-sm lg:text-lg flex justify-center items-center">
+                            Bonnier
+                        </CardClickable>  
+                        <CardClickable
+                            class=" aspect-square col-span-2 text-sm lg:text-lg flex justify-center items-center rounded-tr-8xl">
+                            Dahl
+                        </CardClickable>
+                        <CardClickable
+                            class=" aspect-square text-sm col-span-2 lg:text-lg flex justify-center items-center rounded-br-8xl">
+                            Tengai
+                        </CardClickable>
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-br-8xl" />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-bl-8xl" />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-tr-8xl" />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-tl-8xl " />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-br-8xl" />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-br-8xl" />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-br-8xl" />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-br-8xl" />
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <section id="do">
+            <div class="bg-neutral-300 h-screen flex items-center lg:px-32 relative">
+                <div class="w-full flex flex-col lg:flex-row gap-14 items-center">
+                    <div class="">
+                        <h2 class=" text-7xl lg:text-9xl font-bold text-neutral-100">What</h2>
+                        <h3 class=" text-7xl lg:text-9xl font-bold text-neutral-100 -mt-4">I do</h3>
+                    </div>
+                    <!-- <div class="grid grid-cols-3 lg:grid-cols-8 gap-1 lg:gap-4 p-3 grid-flow-dense w-full">
+                        <CardClickable class=" aspect-square col-span-2 text-sm lg:text-lg rounded-br-8xl rounded-tl-8xl  flex justify-center items-center">
+                            Avensia
+                        </CardClickable>
+                        <CardClickable class=" aspect-square col-span-2 text-sm lg:text-lg flex justify-center items-center">
+                            Bonnier
+                        </CardClickable>  
+                        <CardClickable
+                            class=" aspect-square col-span-2 text-sm lg:text-lg flex justify-center items-center rounded-tr-8xl">
+                            Dahl
+                        </CardClickable>
+                        <CardClickable
+                            class=" aspect-square text-sm col-span-2 lg:text-lg flex justify-center items-center rounded-br-8xl">
+                            Tengai
+                        </CardClickable>
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-br-8xl" />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-bl-8xl" />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-tr-8xl" />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-tl-8xl " />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-br-8xl" />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-br-8xl" />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-br-8xl" />
+                        <CardClickable class=" aspect-square text-sm lg:text-lg flex justify-center items-center rounded-br-8xl" />
+                    </div> -->
+                </div>
             </div>
         </section>
 

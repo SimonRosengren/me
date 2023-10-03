@@ -1,7 +1,7 @@
 <template>
-    <div class="text-neutral-000 font-display flex flex-col text-right p-4 sticky top-0">
-        <a href="https://se.linkedin.com/in/simon-rosengren-b37418128" class="hover:underline">Linked in</a>
-        <a href="https://github.com/SimonRosengren" class="hover:underline">Github</a>
-        <a href="mailto:simonrosengren123@gmail.com" class="hover:underline">Email</a>
+    <div class="text-neutral-100 flex py-3 px-5 justify-between items-end w-full">
+            <a href="https://se.linkedin.com/in/simon-rosengren-b37418128" class="hover:underline"><IconsLinkedin /></a>
+            <a href="https://github.com/SimonRosengren" class="hover:underline"><IconsGithub /></a>
+            <a href="mailto:simonrosengren123@gmail.com" class="hover:underline"><IconsEmail /></a>
     </div>
 </template>

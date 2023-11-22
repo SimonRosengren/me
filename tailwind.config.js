@@ -12,7 +12,8 @@ module.exports = {
       xs: '300px',
       sm: '768px',
       md: '920px',
-      lg: '1330px'
+      lg: '1330px',
+      xl: '1680px',
     },
     fontFamily: {
       'display': ['Arimo', 'san-serif']

@@ -16,8 +16,9 @@ let camera: PerspectiveCamera
 let aspectRatio: Ref<number>
 let scene: Scene
 let stars: Star[] = [];
+let mousePos = { x: 300, y: 300 }
 const loop = () => {
-    stars.forEach(star => star.move())
+    stars.forEach(star => star.move(mousePos))
     renderer.render(scene, camera)
     requestAnimationFrame(loop)
 }
@@ -91,5 +92,9 @@ const setupScene = (): void => {
 onMounted(() => {
     setupScene()
     loop()
+    document.addEventListener('mousemove', (event: MouseEvent) => {
+        mousePos.x = event.clientX;
+        mousePos.y = event.clientY;
+    })
 })
 </script>

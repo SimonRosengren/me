@@ -19,16 +19,18 @@
             </div>
         </section>
         <section id="me">
-            <FullscreenParagraph divide>
+            <FullscreenParagraph class=" bg-[url('cover1.png')] bg-center bg-fixed bg-cover" divide>
                 <template #header-lg>
                     <h2 class=" text-8xl lg:text-9xl font-bold text-neutral-100">Who</h2>
                     <h3 class=" text-8xl lg:text-9xl font-bold text-neutral-100 -mt-4">am I</h3>
                 </template>
                 <template #header>Who am I</template>
                 <template #body>
-                    <p>I'm a full-stack developer who thrives on exploring the ever-evolving tech landscape. From designing and crafting seamless user experiences to diving deep into the backend, I find joy in every aspect of the development process.</p>
+                    <span class="font-bold">
+                        <p>I'm a full-stack developer who thrives on exploring the ever-evolving tech landscape. From designing and crafting seamless user experiences to diving deep into the backend, I find joy in every aspect of the development process.</p>
                         <br>
                         <p>With a passion for innovation and a love for continuous learning, I'm constantly seeking new challenges to expand my skillset. Whether it's building elegant front-end interfaces or architecting robust server-side solutions, I'm up for the task. Let's build something cool together.</p>
+                    </span>
                 </template>
             </FullscreenParagraph>
         </section>
@@ -40,7 +42,9 @@
                 </template>
                 <template #header>What I do</template>
                 <template #body>
+                    <span class="font-bold">
                     I work as a Full-Stack Developer at a startup, contributing in DevOps, Backend, aswell as Frontend development. Additionally, I have the role of Lead Frontend developer, focusing on user interface and experience. This role involves managing deployment, optimizing automation, designing server-side solutions, and pushing the boundaries of web applications (especially on Safari...). It combines technical expertise with leadership to support the startup's innovative solutions.
+                    </span>
                 </template>
             </FullscreenParagraph>
         </section>

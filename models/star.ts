@@ -13,7 +13,6 @@ export class Star {
         this.mesh = mesh;
     }
     move(mousePos: { x: number, y: number }) {
-        console.log(((2 * (mousePos.x - 0) / (1920 - 0)) - 1))
         this.position.x += ((20 * ((mousePos.x) - 0) / (1920 - 0)) - 1) * this.speed
         this.position.y += ((20 * ((mousePos.y * -1) - 0) / (1080 - 0)) - 1) * this.speed
         this.position.z += this.velocity.z * this.speed

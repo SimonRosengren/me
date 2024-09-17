@@ -7,7 +7,6 @@
 <script lang="ts" setup>
 import { Scene, PerspectiveCamera, Mesh, SphereGeometry, MeshBasicMaterial, WebGL1Renderer, Vector3, Color, Fog } from 'three';
 import { useWindowSize } from '@vueuse/core';
-import { Ref } from 'vue';
 import { Star } from '../models/star';
 
 const canvasRef = ref<HTMLCanvasElement | null>(null)

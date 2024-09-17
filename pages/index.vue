@@ -49,7 +49,7 @@
             </FullscreenParagraph>
         </section>
         <section id="did">
-            <FullscreenParagraph>
+            <FullscreenParagraph :divide="false">
                 <template #header-lg>
                     <h2 class=" text-7xl lg:text-9xl font-bold text-neutral-100">What</h2>
                     <h3 class=" text-7xl lg:text-9xl font-bold text-neutral-100 -mt-4">I did</h3>
@@ -63,9 +63,3 @@
 
     </div>
 </template>
-
-<script lang="ts" setup>
-const openMail = () => {
-    navigateTo('mailto:simonrosengren123@gmail.com', { external: true })
-}
-</script>

@@ -7,7 +7,7 @@
             <h2 class="lg:hidden text-6xl mb-6 text-neutral-100">
                 <slot name="header" />
             </h2>
-            <div class="text-neutral-100 text-base leading-6 md:text-xl lg:text-2xl lg:pl-10">
+            <div class="text-neutral-100 text-base md:text-xl lg:text-2xl lg:pl-10">
                 <slot name="body" />
             </div>
         </div>

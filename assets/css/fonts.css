@@ -1,0 +1,107 @@
+/* Light */
+@font-face {
+    font-family: 'NeueMontreal';
+    font-style: thin;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/PPNeueMontreal-Thin.otf') format('opentype'), /* Modern Broswers */
+  }
+
+  /* Light Italic */
+@font-face {
+    font-family: 'NeueMontreal';
+    font-style: italic;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/PPNeueMontreal-Italic.otf') format('opentype'), /* Modern Broswers */
+  }
+
+  /* Regular */
+  @font-face {
+    font-family: 'NeueMontreal';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/PPNeueMontreal-Book.otf') format('opentype'), /* Modern Broswers */
+  }
+
+    /* Regular Italic */
+    @font-face {
+        font-family: 'NeueMontreal';
+        font-style: italic;
+        font-weight: 400;
+        src: local(''),
+        url('../fonts/PPNeueMontreal-Italic.otf') format('opentype'), /* Modern Broswers */
+      }
+
+  /* Medium */
+  @font-face {
+    font-family: 'NeueMontreal';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+    url('../fonts/PPNeueMontreal-Medium.otf') format('opentype'), /* Modern Broswers */
+  }
+
+    /* Medium Italic */
+    @font-face {
+        font-family: 'NeueMontreal';
+        font-style: italic;
+        font-weight: 500;
+        src: local(''),
+        url('../fonts/PPNeueMontreal-Italic.otf') format('opentype'), /* Modern Broswers */
+      }
+
+  /* Semibold */
+  @font-face {
+    font-family: 'NeueMontreal';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+    url('../fonts/PPNeueMontreal-Medium.otf') format('opentype'), /* Modern Broswers */
+  }
+
+    /* Semibold Italic */
+    @font-face {
+        font-family: 'NeueMontreal';
+        font-style: italic;
+        font-weight: 600;
+        src: local(''),
+        url('../fonts/PPNeueMontreal-SemiBolditalic.otf') format('opentype'), /* Modern Broswers */
+      }
+
+  /* Bold */
+  @font-face {
+    font-family: 'NeueMontreal';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+    url('../fonts/PPNeueMontreal-Bold.otf') format('opentype'), /* Modern Broswers */
+  }
+
+    /* Bold */
+    @font-face {
+        font-family: 'NeueMontreal';
+        font-style: italic;
+        font-weight: 700;
+        src: local(''),
+        url('../fonts/PPNeueMontreal-SemiBolditalic.otf') format('opentype'), /* Modern Broswers */
+      }
+
+  /* Extrabold */
+  @font-face {
+    font-family: 'NeueMontreal';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+    url('../fonts/PPNeueMontreal-Bold.otf') format('opentype'), /* Modern Broswers */
+  }
+
+/* Extrabold Italic */
+@font-face {
+    font-family: 'NeueMontreal';
+    font-style: italic;
+    font-weight: 800;
+    src: local(''),
+    url('../fonts/PPNeueNeueMontreal-SemiBolditalic.otf') format('opentype'), /* Modern Broswers */
+    }

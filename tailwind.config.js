@@ -15,9 +15,6 @@ module.exports = {
       lg: '1330px',
       xl: '1680px',
     },
-    fontFamily: {
-      'display': ['Arimo', 'san-serif']
-    },
     extend: {
       colors: {
         neutral: {
@@ -34,15 +31,21 @@ module.exports = {
           300: '#7d261e',
           400: '#560E07',
           500: '#320500'
-        },
-        fontFamily: {
-          '[DM Serif Display]': ['[DM Serif Display]', 'sans-serif']
-        },
+        }, 
+      },
+      fontFamily: {
+        'display': ['NeueMontreal', 'san-serif'],
+        'sans': ['NeueMontreal', 'san-serif'],
+        'serif': ['Prata']
       },
       borderRadius: {
         '8xl': '4rem',
         '9xl': '5rem'
       }
     },
-  }
+  },
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
+  css: ['@/assets/css/fonts.css'],
 };

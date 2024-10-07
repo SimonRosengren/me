@@ -1,9 +1,9 @@
 <template>
 <div>
-    <Header class="fixed top-0 bg-neutral-300/50 backdrop-blur-lg z-10" />
+    <Header class="fixed top-0 bg-neutral-1000/50 backdrop-blur-lg z-10" />
     <slot />
     <Consent v-if="!cookieConsent" @accept="cookieConsent = true" />
-    <Footer class="fixed bottom-0 bg-neutral-300/50 backdrop-blur-lg z-10" />
+    <Footer class="fixed bottom-0 bg-neutral-1000/50 backdrop-blur-lg z-10" />
 </div>
 </template> 
 

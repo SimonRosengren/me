@@ -3,7 +3,7 @@
   <nav class="text-white py-12 px-4 max-w-[1330px] grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-6 lg:gap-12">
     <Thumbnail
       v-for="thumbnail in (navigation || [])[0].children"
-      class="col-span-2 lg:col-span-3"
+      class="col-span-2 lg:col-span-3 !bg-neutral-900 !text-white"
       :key="thumbnail.title"
       :title="thumbnail.title"
       :img="thumbnail.image.src"

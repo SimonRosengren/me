@@ -1,15 +1,16 @@
 <template>
-<div class="w-full flex justify-center">
-  <nav class="text-white py-12 px-4 max-w-[1330px] grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-6 lg:gap-12">
+<div class="w-full flex justify-center p-4 md:py-12 md:px-0">
+  <nav class="text-white py-12 max-w-[1330px] grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-6 lg:gap-12">
     <Thumbnail
       v-for="thumbnail in (navigation || [])[0].children"
-      class="col-span-2 lg:col-span-3 !bg-neutral-900 !text-white"
+      class="col-span-4"
       :key="thumbnail.title"
       :title="thumbnail.title"
-      :img="thumbnail.image.src"
-      :alt="thumbnail.image.alt"
-      :keywords="thumbnail.keywords.split(',')",
-      :description="thumbnail.description"
+      :img="thumbnail.image?.src"
+      :alt="thumbnail.image?.alt"
+      :keywords="thumbnail?.keywords?.split(',')",
+      :description="thumbnail?.description"
+      :ttr="thumbnail.ttr"
      /> 
     
   </nav>
@@ -17,12 +18,5 @@
 </template>
 
 <script lang="ts" setup>
-const search  = ref('')
-
-const results = ref([]);
 const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
-
-watch(search, async () => {
-    results.value = await searchContent(search.value)
-})
 </script>

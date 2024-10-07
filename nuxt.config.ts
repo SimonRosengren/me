@@ -19,7 +19,7 @@ export default defineNuxtConfig({
       theme: 'monokai',
     },
     navigation: {
-      fields: ['author', 'publishedAt', 'image', 'keywords', 'description']
+      fields: ['author', 'publishedAt', 'image', 'keywords', 'description', 'ttr']
     }
   },
 

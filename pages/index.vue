@@ -19,7 +19,7 @@
             </div>
         </section>
         <section id="me">
-            <FullscreenParagraph class=" bg-[url('public/img/cover1.png')] bg-center bg-fixed bg-[length:250%_100vh] sm:bg-cover bg-no-repeat" divide>
+            <FullscreenParagraph class=" bg-[url('public/img/cover1.png')] sm:bg-center bg-fixed bg-[length:250%_100vh] sm:bg-cover bg-no-repeat" divide>
                 <template #header-lg>
                     <h2 class=" text-8xl lg:text-9xl font-medium text-neutral-100">Who</h2>
                     <h3 class=" text-8xl lg:text-9xl font-medium text-neutral-100 -mt-4">am I</h3>

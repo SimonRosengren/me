@@ -1,8 +1,8 @@
 <template>
     <div class="">
-        <Menu class="fixed left-0 top-0 bottom-0" :links="links" />
+        <Menu class="fixed left-0 top-0 bottom-0 invisible md:visible" :links="links" />
+        <MenuSm class="fixed bottom-0 md:invisible" :links="links" />
         <slot />
-        <Header class="absolute bottom-0" />
     </div>
 </template> 
     

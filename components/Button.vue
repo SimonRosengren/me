@@ -12,5 +12,5 @@
     </div>
 </template>
 <script setup lang=ts>
-const props = defineProps<{ filled?: boolean }>()
+const props = defineProps<{ filled?: boolean }>();
 </script>

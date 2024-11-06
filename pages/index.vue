@@ -11,9 +11,16 @@
                             <h2 class="lg:text-9xl leading-[.9] text-7xl text-neutral-100 font-bold">I am Simon</h2>
                         </div>
                     </div>
-                    <Button @click="navigateTo({ path: '/', hash: '#me' })">
-                        <template #body>Explore</template>
-                    </Button>
+                    <nav class="flex flex-col gap-5">
+                        <NuxtLink to="/#me" class="text-neutral-100 text-2xl relative group w-fit">
+                            Me
+                            <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-neutral-100 transition-all duration-300 group-hover:w-full"></span>
+                        </NuxtLink>
+                        <NuxtLink to="/blog" class="text-neutral-100 text-2xl relative group w-fit">
+                            Blog
+                            <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-neutral-100 transition-all duration-300 group-hover:w-full"></span>
+                        </NuxtLink>
+                    </nav>
                 </div>
 
             </div>

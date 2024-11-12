@@ -1,22 +1,22 @@
 ---
-title: 'Multiple Prisma clients'
-description: 'How to handle Prisma client with more than one database'
-keywords: 'prisma, mongodb, postgres, monorepo'
-ttr: '10 min'
+title: 'A smart sticky header'
+description: 'How to know if a sticky header is sticking?'
+keywords: 'css, intersection, sticky'
+ttr: '15 min'
 image:
-  src: '/img/prism.jpg'
-  alt: 'An image of two prisms.'
+  src: '/img/plane.jpg'
+  alt: 'An image of an airplane winodw.'
 head:
   meta:
     - name: 'keywords'
-      content: 'prisma, mongodb, postgres, monorepo'
+      content: 'css, intersection, sticky'
     - name: 'robots'
       content: 'index, follow'
 ---
 
 # Multiple Prisma clients
 
-![Prisms](/img/prism.jpg)
+![Prisms](/img/plane.jpg)
 
 A nice sticky header that shrinks a bit while sticking is one of those components that I keep having to implement but that gives me a headache every time. I recently built one that turned out pretty good so I thought that - even if it is just to ease my own future headaches - I should document my approach. 
 

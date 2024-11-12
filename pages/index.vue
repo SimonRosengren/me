@@ -7,17 +7,17 @@
                 <div class="flex flex-col gap-5">
                     <div class="md:border-b lg:border-r font-medium pb-3 pr-64">
                         <div class=" max-w-xs lg:max-w-6xl">
-                            <h2 class="lg:text-9xl leading-[.9] text-7xl text-neutral-100 font-bold">Hello.</h2>
-                            <h2 class="lg:text-9xl leading-[.9] text-7xl text-neutral-100 font-bold">I am Simon</h2>
+                            <h2 class="lg:text-8xl leading-[.9] text-7xl text-neutral-100 font-bold">Hello.</h2>
+                            <h2 class="lg:text-8xl leading-[.9] text-7xl text-neutral-100 font-bold">I am Simon</h2>
                         </div>
                     </div>
-                    <nav class="flex flex-col gap-5">
-                        <NuxtLink to="/#me" class="text-neutral-100 text-2xl relative group w-fit">
-                            Me
+                    <nav class="flex gap-8">
+                        <NuxtLink to="/#me" class="text-neutral-100 text-lg cursor-pointer relative group w-fit flex items-center gap-2">
+                            <IconsPerson /> <label>Me</label>
                             <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-neutral-100 transition-all duration-300 group-hover:w-full"></span>
                         </NuxtLink>
-                        <NuxtLink to="/blog" class="text-neutral-100 text-2xl relative group w-fit">
-                            Blog
+                        <NuxtLink to="/blog" class="text-neutral-100 text-lg cursor-pointer relative group w-fit flex items-center gap-2">
+                            <IconsBlog /> <label>Blog</label>
                             <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-neutral-100 transition-all duration-300 group-hover:w-full"></span>
                         </NuxtLink>
                     </nav>

@@ -1,5 +1,6 @@
 <template>
-    <div class="flex flex-col pb-12 pt-32 px-4 text-white w-28 items-center font-thin">
+    <div class="flex flex-col pb-12 pt-12 px-4 text-white w-28 items-center font-thin">
+        <IconsBird class="mb-16" />
         <nav class="flex flex-col gap-3 items-center text-base" aria-label="Main navigation">
             <NuxtLink v-for="link in links" :key="link.title" :to="link.to" class="text-white group relative">
                 <span class="flex items-center gap-2">

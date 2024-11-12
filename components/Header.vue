@@ -9,7 +9,7 @@
         <a href="mailto:simonrosengren123@gmail.com" target="_blank" class="hover:underline">
             <IconsEmail />
         </a>
-        <a href="simonrosengren.bsky.social" target="_blank" class="hover:underline">
+        <a href="https://simonrosengren.bsky.social" target="_blank" class="hover:underline">
             <IconsBluesky />
         </a>
         <a href="https://x.com/simrosengren" target="_blank" class="hover:underline">

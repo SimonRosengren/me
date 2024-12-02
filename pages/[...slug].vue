@@ -31,4 +31,7 @@ main a {
 main pre {
   @apply font-mono whitespace-pre my-4 bg-slate-900 px-4 py-2 md:px-8 md:py-6 rounded-md overflow-x-scroll
 }
+main code {
+  @apply font-mono bg-slate-900 px-2 py-1 rounded-md text-yellow-500
+}
 </style>

@@ -3,26 +3,29 @@
         <MagicScene />
         <section id="home">
             <div class="h-screen" />
-            <div class="flex flex-col justify-center h-screen px-4 lg:px-32 fixed top-0">
-                <div class="flex flex-col gap-5">
-                    <div class="md:border-b lg:border-r font-medium pb-3 pr-64">
-                        <div class=" max-w-xs lg:max-w-6xl">
-                            <h2 class="lg:text-8xl leading-[.9] text-7xl text-neutral-100 font-bold">Hello.</h2>
-                            <h2 class="lg:text-8xl leading-[.9] text-7xl text-neutral-100 font-bold">I am Simon</h2>
+            <div class="h-screen fixed top-0 w-full">
+                <div class="px-4 sm:px-0 h-full w-full flex items-center">
+                    <div class="grid grid-cols-4 md:grid-cols-12 w-full">
+                        <div class="sm:hidden h-full w-full text-white mb-6">
+                            <IconsBird class="w-full h-full" />
+                        </div>
+                        <div class="sm:col-start-2 col-span-full">
+                            <h2 class="text-neutral-100 text-6xl md:text-7xl lg:text-9xl font-normal">
+                                    Hello,
+                                <br />
+                                    I am Simon
+                            </h2>
+                        </div>
+                        <div class="sm:col-start-2 col-span-full flex gap-5 mt-8">
+                            <NuxtLink class="rounded-full w-fit py-2 px-8 h-12 border border-neutral-100 bg-neutral-100 text-neutral-1000 text-xl font-normal" to="#me">
+                                About
+                            </NuxtLink>
+                            <NuxtLink class="rounded-full w-fit py-2 px-8 h-12 border border-neutral-100 bg-neutral-1000 text-neutral-100 text-xl font-normal" to="/blog">
+                                Blog
+                            </NuxtLink>
                         </div>
                     </div>
-                    <nav class="flex gap-8">
-                        <NuxtLink to="/#me" class="text-neutral-100 text-lg cursor-pointer relative group w-fit flex items-center gap-2">
-                            <IconsPerson /> <label>Me</label>
-                            <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-neutral-100 transition-all duration-300 group-hover:w-full"></span>
-                        </NuxtLink>
-                        <NuxtLink to="/blog" class="text-neutral-100 text-lg cursor-pointer relative group w-fit flex items-center gap-2">
-                            <IconsBlog /> <label>Blog</label>
-                            <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-neutral-100 transition-all duration-300 group-hover:w-full"></span>
-                        </NuxtLink>
-                    </nav>
                 </div>
-
             </div>
         </section>
         <section id="me">

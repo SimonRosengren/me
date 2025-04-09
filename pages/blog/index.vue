@@ -13,6 +13,7 @@
       :keywords="thumbnail.keywords"
       :description="thumbnail.description"
       :ttr="thumbnail.ttr"
+      :path="thumbnail._path"
      /> 
     
   </nav>

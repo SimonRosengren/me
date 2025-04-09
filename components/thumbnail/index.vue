@@ -2,7 +2,7 @@
     <div class="p-4 border border-neutral-600 aspect-[3/4] rounded-sm hover:bg-neutral-400/5 active:bg-neutral-400/10 cursor-pointer transition-all">
         <div class="w-full flex justify-between text-xs">
             <h4 class="flex gap-2 items-center"><IconsClock class="h-4 w-4" />{{ ttr }}</h4>
-            <IconsShare class="h-4 w-4" />
+            <ShareMenu :url="getFullUrl()" :title="title" />
         </div>
         <div class="h-full flex flex-col justify-between pb-3 pt-12">
             <NuxtImg :src="img" class="w-full" />
@@ -21,5 +21,17 @@
     </div>
 </template>
 <script setup lang="ts">
-defineProps<{ img: string, title: string, description: string, keywords?: string, ttr?: string }>();
+const props = defineProps<{ 
+    img: string, 
+    title: string, 
+    description: string, 
+    keywords?: string, 
+    ttr?: string,
+    path?: string 
+}>();
+
+const getFullUrl = () => {
+    const baseUrl = window.location.origin;
+    return `${baseUrl}${props.path || ''}`;
+};
 </script>

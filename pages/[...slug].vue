@@ -35,10 +35,16 @@ main a {
   @apply text-blue-300 hover:text-blue-400 transition-colors
 }
 main pre {
-  @apply font-mono whitespace-pre my-6 bg-slate-900 px-4 py-3 md:px-8 md:py-6 rounded-lg overflow-x-scroll text-base
+  @apply font-mono whitespace-pre my-6 bg-slate-900 px-3 py-3 md:px-8 md:py-6 rounded-lg 
+         overflow-x-auto text-sm md:text-base w-full max-w-[calc(100vw-3rem)] md:max-w-full
+         shadow-md border border-slate-800;
 }
 main code {
-  @apply font-mono bg-slate-900 px-2 py-1 rounded-md text-yellow-500 text-base
+  @apply font-mono bg-slate-900 px-1.5 py-0.5 md:px-2 md:py-1 rounded-md text-yellow-500 
+         text-sm md:text-base break-words;
+}
+main pre code {
+  @apply p-0 bg-transparent text-inherit;
 }
 main blockquote {
   @apply border-l-4 border-blue-500 pl-6 italic my-8 py-2 text-gray-300 text-lg

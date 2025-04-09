@@ -21,6 +21,7 @@
     </div>
 </template>
 <script setup lang="ts">
+const route = useRoute();
 const props = defineProps<{ 
     img: string, 
     title: string, 
@@ -31,7 +32,7 @@ const props = defineProps<{
 }>();
 
 const getFullUrl = () => {
-    const baseUrl = window.location.origin;
+    const baseUrl = 'https://simonrosengren.com';
     return `${baseUrl}${props.path || ''}`;
 };
 </script>

@@ -8,7 +8,7 @@
          class="absolute right-0 top-6 bg-neutral-900 border border-neutral-700 rounded-md shadow-lg p-2 z-10 min-w-[180px]">
       <div class="flex flex-col gap-2">
         <button @click.stop="copyLink" class="flex items-center gap-2 p-2 hover:bg-neutral-800 rounded w-full text-left">
-          <span class="material-icons text-sm">content_copy</span>
+          <IconsCopy class="h-4 w-4" />
           <span>Copy link</span>
         </button>
         <a :href="getTwitterShareUrl()" target="_blank" rel="noopener noreferrer" 
@@ -18,7 +18,7 @@
         </a>
         <a :href="getFacebookShareUrl()" target="_blank" rel="noopener noreferrer" 
            @click.stop class="flex items-center gap-2 p-2 hover:bg-neutral-800 rounded">
-          <span class="material-icons text-sm">facebook</span>
+          <IconsFacebook class="w-4 h-4" />
           <span>Share on Facebook</span>
         </a>
         <a :href="getLinkedInShareUrl()" target="_blank" rel="noopener noreferrer" 

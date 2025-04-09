@@ -14,31 +14,37 @@
 
   <style>
 main {
-  @apply prose-sm lg:prose text-white
+  @apply prose lg:prose-lg text-white
 }  
 main h1 {
-  @apply text-white mb-8 text-5xl md:text-7xl lg:text-8xl font-bold
+  @apply text-white mb-10 text-5xl md:text-7xl lg:text-8xl font-bold
+}
+main h2 {
+  @apply text-3xl md:text-4xl mt-10 mb-6 font-semibold
 }
 main h2 a {
   @apply !text-white no-underline
 }
+main h3 {
+  @apply text-2xl md:text-3xl mt-8 mb-4 font-medium
+}
 main p {
-  @apply prose text-white font-normal  leading-7
+  @apply text-lg text-white font-normal leading-8 my-6
 }
 main a {
-  @apply text-blue-300
+  @apply text-blue-300 hover:text-blue-400 transition-colors
 }
 main pre {
-  @apply font-mono whitespace-pre my-4 bg-slate-900 px-4 py-2 md:px-8 md:py-6 rounded-md overflow-x-scroll
+  @apply font-mono whitespace-pre my-6 bg-slate-900 px-4 py-3 md:px-8 md:py-6 rounded-lg overflow-x-scroll text-base
 }
 main code {
-  @apply font-mono bg-slate-900 px-2 py-1 rounded-md text-yellow-500
+  @apply font-mono bg-slate-900 px-2 py-1 rounded-md text-yellow-500 text-base
 }
 main blockquote {
-  @apply border-l-4 border-blue-500 pl-4 italic my-6 text-gray-300
+  @apply border-l-4 border-blue-500 pl-6 italic my-8 py-2 text-gray-300 text-lg
 }
 main ul, main ol {
-  @apply my-4 ml-6
+  @apply my-6 ml-8 text-lg
 }
 main ul {
   @apply list-disc
@@ -47,27 +53,27 @@ main ol {
   @apply list-decimal
 }
 main li {
-  @apply my-2
+  @apply my-3
 }
 main img {
-  @apply rounded-lg my-8 mx-auto shadow-lg
+  @apply rounded-lg my-10 mx-auto shadow-xl max-w-full
 }
 main hr {
-  @apply my-8 border-gray-700
+  @apply my-10 border-gray-700
 }
 main table {
-  @apply w-full border-collapse my-6
+  @apply w-full border-collapse my-8 text-base
 }
 main th, main td {
-  @apply border border-gray-700 px-4 py-2
+  @apply border border-gray-700 px-5 py-3 text-base
 }
 main th {
-  @apply bg-slate-800
+  @apply bg-slate-800 font-semibold
 }
 main figure {
-  @apply my-8
+  @apply my-10
 }
 main figcaption {
-  @apply text-center text-sm text-gray-400 mt-2
+  @apply text-center text-base text-gray-400 mt-3
 }
 </style>

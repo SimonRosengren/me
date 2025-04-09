@@ -1,6 +1,6 @@
 <template>
   <div class="w-full px-6 md:px-8 lg:px-0 md:flex justify-center">
-    <main>
+    <main class="pt-12 md:pt-16">
       <ContentDoc />
     </main>
   </div>
@@ -14,7 +14,7 @@
 
   <style>
 main {
-  @apply prose lg:prose-lg text-white
+  @apply prose lg:prose-xl text-white
 }  
 main h1 {
   @apply text-white mb-10 text-5xl md:text-7xl lg:text-8xl font-bold
@@ -29,7 +29,7 @@ main h3 {
   @apply text-2xl md:text-3xl mt-8 mb-4 font-medium
 }
 main p {
-  @apply text-lg text-white font-normal leading-8 my-6
+  @apply text-xl text-white font-normal leading-8 my-6
 }
 main a {
   @apply text-blue-300 hover:text-blue-400 transition-colors
@@ -47,10 +47,10 @@ main pre code {
   @apply p-0 bg-transparent text-inherit;
 }
 main blockquote {
-  @apply border-l-4 border-blue-500 pl-6 italic my-8 py-2 text-gray-300 text-lg
+  @apply border-l-4 border-blue-500 pl-6 italic my-8 py-2 text-gray-300 text-xl
 }
 main ul, main ol {
-  @apply my-6 ml-8 text-lg
+  @apply my-6 ml-8 text-xl
 }
 main ul {
   @apply list-disc
@@ -68,10 +68,10 @@ main hr {
   @apply my-10 border-gray-700
 }
 main table {
-  @apply w-full border-collapse my-8 text-base
+  @apply w-full border-collapse my-8 text-lg
 }
 main th, main td {
-  @apply border border-gray-700 px-5 py-3 text-base
+  @apply border border-gray-700 px-5 py-3 text-lg
 }
 main th {
   @apply bg-slate-800 font-semibold
@@ -80,6 +80,6 @@ main figure {
   @apply my-10
 }
 main figcaption {
-  @apply text-center text-base text-gray-400 mt-3
+  @apply text-center text-lg text-gray-400 mt-3
 }
 </style>

@@ -35,7 +35,7 @@ main a {
   @apply text-blue-300 hover:text-blue-400 transition-colors
 }
 main pre {
-  @apply font-mono whitespace-pre my-6 bg-slate-900 px-3 py-3 md:px-8 md:py-6 rounded-lg 
+  @apply font-mono whitespace-pre my-6 bg-slate-900 px-2 py-3 rounded-lg 
          overflow-x-auto text-sm md:text-base w-full max-w-[calc(100vw-3rem)] md:max-w-full
          shadow-md border border-slate-800;
 }

@@ -18,9 +18,13 @@ head:
 
 ![Prisms](/img/prism.jpg)
 
+## The Database Migration Challenge
+
 In one of the projects I'm working on we're in the process of moving parts of our data from Neo4J to MongoDB. The ORM we're using is Prisma, and while there is quite a lot to talk about when it comes to Prismas support - or the lack thereof - for MongoDB it was actually something else that became my first real obstacle. How do you work with two Prisma clients?
 
 Now, before I get into the nitty gritty of living with two Prisma clients I want to say that this perticular project is a Monorepo powered by TurboRepo. This might have made things more complicated than it needed to be, but hey! _Ce'st la vie_
+
+## The Starting Point: Single Database Setup
 
 We started out with something that I think most users of Prisma recognize. A single schema.prisma file for a Postgres database. It looked something like this: 
 
@@ -37,6 +41,8 @@ We started out with something that I think most users of Prisma recognize. A sin
     // A bunch of models
   ```
 
+## Separating Concerns: Two Schema Files
+
 I didn't want to start mixing my old and dusty Postgres-models with my new and shiny MongoDB-models, so naturally I decided to create a second .prisma file, ending up with mongo_schema.prisma and pg_schema.prisma. The datasource for the new schema is pretty straight forward, but its in the generator the magic happens.
 
   ```ts [mongo_schema.prisma]
@@ -51,13 +57,19 @@ I didn't want to start mixing my old and dusty Postgres-models with my new and s
     }
   ```
 
+## The Key Insight: Custom Output Paths
+
 Prisma lets you define an output for all the generated types etc that Prisma provides. This is how we can seperate the two clients. From now on, everytime that I run `npx prisma generate`, prisma will spit out all the mongoDB related stuff in `./generated/mongo_client`.
+
+## Exporting Your New Client
 
 From here its just a matter of exporting your new mongo-client. For simplicity I decided to do it from a new file rather than the same as was being used for Postgres. Ending up with something like this
 
   ```ts [mongo_prisma.ts]
   export * from './generated/mongo_client'
   ```
+
+## Using Both Clients Together
 
 And now I can import it using an alias
 
@@ -68,5 +80,7 @@ And now I can import it using an alias
   const client = new PrismaClient(); // Our first client
   const mongoClient = new MongoClient(); // Our second client
   ```
+
+## Final Thoughts
 
 I should probably do a similar pattern for the old client, naming it pg_client for consistency and what not but hopefully this will atleast set you on the right path if you're facing the same problems as we were. 

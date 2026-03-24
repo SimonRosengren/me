@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     'nuxt-gtag',
     '@nuxt/content',
     '@nuxt/image',
+    '@vercel/analytics',
   ],
 
   gtag: {

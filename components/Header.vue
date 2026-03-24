@@ -4,14 +4,17 @@
             <IconsBird class="w-8 h-8" />
         </div>
         <div class="hidden sm:flex gap-8">
-            <NuxtLink to="#me">
+            <NuxtLink to="#me" class="text-white group relative">
                 About
+                <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-neutral-100 transition-all duration-300 group-hover:w-full"/>
             </NuxtLink>
-            <NuxtLink to="#did">
+            <NuxtLink to="#did" class="text-white group relative">
                 Experience
+                <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-neutral-100 transition-all duration-300 group-hover:w-full"/>
             </NuxtLink>
-            <NuxtLink to="/blog">
+            <NuxtLink to="/blog" class="text-white group relative">
                 Blog
+                <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-neutral-100 transition-all duration-300 group-hover:w-full"/>
             </NuxtLink>
         </div>
         <div class="col-span-full sm:col-span-2 sm:col-start-11 flex justify-between sm:justify-normal sm:gap-5 lg:gap-8">

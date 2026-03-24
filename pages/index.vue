@@ -17,10 +17,10 @@
                             </h2>
                         </div>
                         <div class="sm:col-start-2 col-span-full flex gap-5 mt-8">
-                            <NuxtLink class="rounded-full w-fit py-2 px-8 h-12 border border-neutral-100 bg-neutral-100 text-neutral-1000 text-xl font-normal" to="#me">
+                            <NuxtLink class="rounded-full w-fit py-2 px-8 h-12 border border-neutral-100 bg-neutral-100 text-neutral-1000 text-xl font-normal hover:bg-white/80 border-transparent transition-all" to="#me">
                                 About
                             </NuxtLink>
-                            <NuxtLink class="rounded-full w-fit py-2 px-8 h-12 border border-neutral-100 bg-neutral-1000 text-neutral-100 text-xl font-normal" to="/blog">
+                            <NuxtLink class="rounded-full w-fit py-2 px-8 h-12 border border-neutral-100 bg-neutral-1000 text-neutral-100 text-xl font-normal hover:bg-white/10 transition-all" to="/blog">
                                 Blog
                             </NuxtLink>
                         </div>
@@ -62,7 +62,7 @@
                 <template #header>What I do</template>
                 <template #body>
                     <p class="font-normal">
-                        I work as a fullstack developer for an innovative startup where I have the role of frontend-lead. Being part of a small time at a small startup allows me to use my skills in everything from development to product design. 
+                        I work as a fullstack developer for an innovative startup where I have the role of frontend-lead. Being part of a small team at a small startup allows me to use my skills in everything from development to product design. 
                     </p>
                     <br />
                     <p class="font-normal">

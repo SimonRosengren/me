@@ -24,6 +24,7 @@
                                 Blog
                             </NuxtLink>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -83,6 +84,18 @@
                 </template>
             </FullscreenParagraph>
         </section>
+    <div class="px-8 py-8 sm:hidden">
+      <div class="sm:col-start-2 col-span-full flex gap-5 mt-8">
+        <NuxtLink to="https://keyquake.site" class="text-white group relative" :external="true" target="_blank">
+          Keyquake
+                            <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-neutral-100 transition-all duration-300 group-hover:w-full"/>
+                            </NuxtLink>
+                            <NuxtLink to="https://colorquake.vercel.app" class="text-white group relative" :external="true" target="_blank">
+                            Colorquake
+                            <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-neutral-100 transition-all duration-300 group-hover:w-full"/>
+                            </NuxtLink>
+                        </div>
+    </div>
 
     </div>
 </template>

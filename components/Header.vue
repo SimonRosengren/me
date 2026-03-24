@@ -16,6 +16,14 @@
                 Blog
                 <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-neutral-100 transition-all duration-300 group-hover:w-full"/>
             </NuxtLink>
+            <NuxtLink to="https://keyquake.site" class="text-white group relative" :external="true" target="_blank">
+                Keyquake
+                <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-neutral-100 transition-all duration-300 group-hover:w-full"/>
+            </NuxtLink>
+            <NuxtLink to="https://colorquake.vercel.app" class="text-white group relative" :external="true" target="_blank">
+                Colorquake
+                <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-neutral-100 transition-all duration-300 group-hover:w-full"/>
+            </NuxtLink>
         </div>
         <div class="col-span-full sm:col-span-2 sm:col-start-11 flex justify-between sm:justify-normal sm:gap-5 lg:gap-8">
             <NuxtLink to="https://se.linkedin.com/in/simon-rosengren-b37418128" external target="_blank">
